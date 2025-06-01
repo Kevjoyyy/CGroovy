@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+
+    
+</head>
+<body>
+    
+<div class="menuBar">
+    <h1 class="logo">C'Groovy</h1>
+    <hr>
+    <a href="index.html" id="homePageMenu">Home</a>
+    <a href="artists.html" id="artistsMenu">Artists</a>
+    <a href="songCollection.html" id="songCollectionMenu">Song Collection</a>
+    <a href="AboutUs.html" id="aboutUsMenu">About Us</a>
+</div>
+
+
+<div class="mainView">
+    
+    <div class="navbar">
+        <div class="searchBar">
+            <input type="text" placeholder="Type Songs, Artists, Playlists, and Albums">
+        </div>
+
+        <div>
+            <img src="Assets/ProfilePicture.jpg" alt="ProfilePicture" class="profilePicture">
+        </div>
+    </div>
+
+        <hr>
+
+
+    <div class="heroSection">
+        <h3>Ready to Treat Your Ears Today?</h3>
+        <p>Enjoy listening to various songs in C'Groovy with vast library, artists, and songs</p>
+
+        <button class="listenNowButton">
+            <a href="songCollection.html">Listen Now</a>
+        </button>
+    </div>
+
+        <hr>
+
+    <div class="songRecommendation">
+        <h2>❗❗Song Recommendations❗❗</h2>
+
+        <div class="sliderContainer">  
+            <button class="sliderButton" id="leftButton">&#11164;</button>
+
+            <div class="sliderImage">
+                 <a href="Blindinglights.html">
+                    <img src="Assets/TheWeekndRecommendationBanner.jpeg" alt="TheWeeknd" class="active">
+                 </a>
+
+                <a href="BirdsOfAFeather.html">
+                    <img src="Assets/BillieEilishRecommendationBanner.jpg" alt="BillieEilish">
+                </a>
+
+                <a href="CruelSummer.html">
+                    <img src="Assets/TaylorSwiftRecommendationBanner.jpg" alt="TaylorSwift">
+                </a>
+            </div>     
+            <button class="sliderButton" id="rightButton">&#11166;</button>
+        </div>
+    </div>
+
+        <hr>
+
+    <div class="bestSellerSongs">
+        <h2>🔥Best Seller Songs🔥</h2>
+
+        <div class="playlist">
+
+            <div class="playlistgrid">
+                <a href="Blindinglights.html">
+                    <div class="card">
+                        <img src="Assets/blinding lights.jfif" alt="">
+                        <h3 class="bestSellerSongTitle">Blinding Lights</h3>
+                        <h5>The Weeknd</h5>
+                    </div>
+                </a>
+                
+                
+                <a href="Luther.html">
+                    <div class="card">
+                        <img src="Assets/Luther.png" alt="">
+                        <h3 class="bestSellerSongTitle">Luther</h3>
+                        <h5>Kendrick Lamar, SZA</h5>
+                    </div>
+                </a>
+                
+
+                <a href="Jennie.html">
+                    <div class="card"> 
+                        <img src="Assets/Jennie.png" alt="JennieAlbumCover">
+                        <h3 class="bestSellerSongTitle">like JENNIE</h3>
+                        <h5>JENNIE</h5>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        let slideIndex = 0
+        const images = $(".sliderImage img")
+
+        const leftButton = $("#leftButton")
+        const rightButton = $("#rightButton")
+    
+
+            leftButton.click(function(){
+                    images.removeClass("active")
+                    slideIndex = (slideIndex -1) % images.length
+                    images.eq(slideIndex).addClass("active")
+            })
+
+            rightButton.click(function(){
+                images.removeClass("active")
+                slideIndex = (slideIndex + 1) % images.length
+                images.eq(slideIndex).addClass("active")
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C'Groovy</title>
+    <link rel="stylesheet" href="PageSongsDetail.css" />
+</head>
+<body>
+    
+    <div class="menuBar">
+    <h1 class="logo">C'Groovy</h1>
+    <hr>
+    <a href="index.html" id="homePageMenu">Home</a>
+    <a href="artists.html" id="artistsMenu">Artists</a>
+    <a href="songCollection.html" id="songCollectionMenu">Song Collection</a>
+    <a href="AboutUs.html" id="aboutUsMenu">About Us</a>
+</div>
+
+
+
+
+<div class="mainView">
+
+    <div class="navbar">
+        <div class="searchBar">
+            <input type="text" placeholder="Type Songs, Artists, Playlists, and Albums">
+        </div>
+
+        <div>
+            <img src="Assets/ProfilePicture.jpg" alt="ProfilePicture" class="profilePicture">
+        </div>
+    </div>
+
+
+
+
+        <div class="medias">
+    <div class="album-container">
+        <div class="album-header">
+            <h2>Birds Of A Feather</h2>
+            <h3>Billie Eilish</h3>
+            <p class="release-date">Birds Of A Feather - 17 May 2024</p>
+            <p class="short-description">This song was released by Billie Eilish in 2024.</p>
+        </div>
+
+        <div class="album-cover">
+            <img src="Assets/Birds Of A feather.webp" alt="Birds Of A Feather Album Cover" />
+        </div>
+
+        <div class="audio-player" aria-label="Audio player for Birds Of A Feather">
+            <button class="play-button" id="play-button" aria-label="Play/Pause button">&#9658;</button>
+            <div class="audio-controls">
+                <span class="time" id="current-time">0:00</span>
+                <div class="progress-bar" id="progress-bar" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0" aria-label="Audio progress bar">
+                    <div class="progress-filled" id="progress-filled"></div>
+                </div>
+                <span class="time" id="duration">0:00</span>
+            </div>
+        </div>
+
+        <audio id="audio" src="Assets/Billie Eilish - BIRDS OF A FEATHER (Official Music Video)-yt.savetube.me.mp3" preload="auto"></audio>
+    </div>
+
+    <div class="lyrics-container">
+        <h3>Lyrics</h3>
+        <div class="lyrics" id="lyrics">
+    <span>(But I wanna stay)</span><br />
+    <span>I want you to stay</span><br />
+    <span>'Til I'm in the grave</span><br />
+    <span>'Til I rot away, dead and buried</span><br />
+    <span>'Til I'm in the casket you carry</span><br />
+    <span>If you go, I'm goin' too, uh</span><br />
+    <span>'Cause it was always you (Alright)</span><br />
+    <span>And if I'm turnin' blue, please don't save me</span><br />
+    <span>Nothin' left to lose without my baby</span><br />
+    <span>Birds of a feather, we should stick together, I know</span><br />
+    <span>I said I'd never think I wasn't better alone</span><br />
+    <span>Can't change the weather, might not be forever</span><br />
+    <span>But if it's forever, it's even better</span><br />
+    <span>And I don't know what I'm cryin' for</span><br />
+    <span>I don't think I could love you more</span><br />
+    <span>It might not be long, but baby, I</span><br />
+    <span>I'll love you 'til the day that I die</span><br />
+    <span>'Til the day that I die</span><br />
+    <span>'Til the light leaves my eyes</span><br />
+    <span>'Til the day that I die</span><br />
+    <span>I want you to see, hm</span><br />
+    <span>How you look to me, hm</span><br />
+    <span>You wouldn't believe if I told ya</span><br />
+    <span>You would keep the compliments I throw ya</span><br />
+    <span>But you're so full of shit, uh</span><br />
+    <span>Tell me it's a bit, oh</span><br />
+    <span>Say you don't see it, your mind's polluted</span><br />
+    <span>Say you wanna quit, don't be stupid</span><br />
+    <span>And I don't know what I'm cryin' for</span><br />
+    <span>I don't think I could love you more</span><br />
+    <span>It might not be long, but baby, I</span><br />
+    <span>Don't wanna say goodbye</span><br />
+    <span>Birds of a feather, we should stick together, I know ('Til the day that I die)</span><br />
+    <span>I said I'd never think I wasn't better alone ('Til the light leaves my eyes)</span><br />
+    <span>Can't change the weather, might not be forever ('Til the day that I die)</span><br />
+    <span>But if it's forever, it's even better</span><br />
+    <span>I knew you in another life</span><br />
+    <span>You had that same look in your eyes</span><br />
+    <span>I love you, don't act so surprised</span><br />
+   
+</div>
+
+    </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+      <script src="PageSongsDetail.js"></script>
+
+    </script>
+</body>
+</html>
+
